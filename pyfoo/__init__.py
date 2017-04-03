@@ -1,1 +1,1 @@
-from pyfoo import PyfooAPI, Entry, SearchParameter
+from .pyfoo import PyfooAPI, Entry, SearchParameter
