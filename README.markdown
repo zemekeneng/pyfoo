@@ -1,26 +1,8 @@
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-##Pyfoo is a Python wrapper for the Wufoo API.
+## Pyfoo is a Python wrapper for the Wufoo API.
 
 You can use the wrapper with either an API Key or an email address, password, and integration key.
 
-###Example usage:
+### Example usage:
 
 	api = PyfooAPI('your_account', 'your_api_key_here')
 	or
@@ -35,7 +17,7 @@ documentation directly when accessing class properties, or a simple dir(form) wi
 of all of the available properties.
 
 
-###Here are some examples:
+### Here are some examples:
 
 	api = PyfooAPI('your_account', 'your_api_key_here')
 	for form in api.forms:
@@ -63,7 +45,7 @@ of all of the available properties.
 
 
 
-###PyfooAPI Class Documentation:    
+### PyfooAPI Class Documentation:    
 
 	class PyfooAPI(account, api_key) or
 	class PyfooAPI(email=None, password=None, integration_key=None)
