@@ -21,29 +21,31 @@ of all of the available properties.
 
 	api = PyfooAPI('your_account', 'your_api_key_here')
 	for form in api.forms:
-	    print '%s (%s)' % (form.Name, form.entry_count)
+	    print( '%s (%s)' % (form.Name, form.entry_count) )
 
 	for report in api.reports:
-	    print '%s (%s)' % (report.Name, report.entry_count)
+	    print( '%s (%s)' % (report.Name, report.entry_count) )
 
 	for user in api.users:
-	    print '%s (%s)' % (report.Name, report.entry_count)
+	    print( '%s (%s)' % (report.Name, report.entry_count) )
 
 	contact_form = api.forms[0]
 	email_field = contact_form.get_field('Email')    
 	entries = contact_form.get_entries() # By default this returns 100 entries sorted by DateCreated descending
 	for entry in entries: 
-	    print entry[email_field.ID]
+	    print( entry[email_field.ID] )
 
 	entry = entries[0]
 	for field in contact_form.fields:
 	    if field.SubFields:
 	        for subfield in field.SubFields:
-	            print '%s: %s' % (subfield.Label, entry[subfield.ID])
+	            print( '%s: %s' % (subfield.Label, entry[subfield.ID]) )
 	    else:
-	        print '%s: %s' % (field.Title, entry[field.ID])
+	        print( '%s: %s' % (field.Title, entry[field.ID]) )
 
+### Run tests from the root of this repo:
 
+	python -m unittest discover
 
 ### PyfooAPI Class Documentation:    
 
