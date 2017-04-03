@@ -294,7 +294,7 @@ class PyfooAPI(object):
                 test_script.close()
 
         try:
-            json_object = json.loads(json_string)
+            json_object = json.loads(json_string.decode('utf8'))
             
         except Exception as ex:
             print(url)
